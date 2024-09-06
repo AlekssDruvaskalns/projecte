@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class PlaylistController extends Controller
 {
-    /**
+    /**s
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('songs');
+        return view('playlist.songs');
     }
 
     /**
@@ -20,7 +20,7 @@ class PlaylistController extends Controller
      */
     public function create()
     {
-        return view('songs.create');
+        return view('playlist.create');
     }
 
     /**
@@ -44,7 +44,7 @@ class PlaylistController extends Controller
      */
     public function edit(Playlist $playlist)
     {
-        //
+        return view('playlist.edit');
     }
 
     /**
